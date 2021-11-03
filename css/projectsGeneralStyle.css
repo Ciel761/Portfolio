@@ -1,0 +1,406 @@
+﻿body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align:right;
+    margin: 0;
+}
+
+/* Navbar */
+
+.nav {
+    width: 100px;
+    margin: 5px 0 5px 0;
+}
+
+.nav> p {
+    margin: auto;
+}
+
+/* Text Font */
+.projectTitle > p {
+    font-size: 72pt;
+    font-weight: 900;
+}
+
+.chapterTitle > p {
+    font-size: 72pt;
+    font-weight: 900;
+}
+
+.nav > p {
+    font-size: 14pt;
+}
+
+h1 {
+    font-size: 72pt;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+#publication >div  > h2 {
+    max-width:500px;
+}
+
+h2 > p {
+    margin-top: 2px;
+}
+
+h3 {
+    
+    font-weight: 18pt;
+    font-weight: 300;
+}
+
+h3 > p {
+    margin-top: 2px;
+}
+
+p {
+    font-size: 10pt;
+    font-weight: 100;
+}
+
+p > a {
+    color:#000000;
+}
+
+p.imageDescription {
+    font-style: italic;
+    font-size: 8pt;
+}
+
+.ending {
+    margin-top: 50px;
+    font-size: 8pt;
+    text-align:left;
+}
+
+a, p>a {
+    transition-timing-function: ease-in-out;
+    display:inline-block;
+}
+
+a:hover, p>a:hover {
+    transform-origin: center;
+    transform: scale(1.1,1.1);
+}
+
+.ending>img {
+    
+}
+
+.ending >p {
+    margin-bottom:20px;
+}
+
+#hmiDesign {
+    color: #ffffff;
+    background-color: #000000;
+    padding-top: 300px;
+    padding-bottom: 350px;
+}
+
+
+#tenGuideline > div > .nav > p >a {
+    font-size:8pt;
+}
+p#home , p#topChapter {
+    text-align:left;
+}
+
+p#about , p#skipChapter {
+    text-align: right;
+}
+
+/* Image */
+.projectContentWrapper {
+    background-color: #ffffff;
+}
+
+.imageWrapper {
+    display:flex;
+    flex-direction:row-reverse;
+    align-items: flex-start;
+    flex-grow: 0;
+}
+
+.imageContaineMultiple {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.imageItem {
+    margin: 0 0 10px 50px;
+}
+
+img.normalImage {
+    height: 300px;
+}
+
+img.largeImage {
+    height: 500px;
+}
+
+img.extraLargeImage {
+    height: 700px;
+}
+
+img.longImage {
+    width: 70vw;
+    max-width: 900px;
+}
+
+img.tallImage {
+    max-height: 120vh;
+    width: 35vw;
+}
+
+#multipleItem {
+    
+}
+
+.multipleImage {
+    height: 250px;
+    margin-left: 20px;
+}
+
+video.largeVideo {
+    height: 500px;
+}
+
+.imageItem {
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+}
+
+/* Special Color and Special Layout*/
+#solutionTeleworking2021 {
+    padding: 200px 15vw 150px 0px;
+    background: radial-gradient(54.51% 62.67% at 141.01% -12.62%, rgba(255, 146, 30, 0.2) 0%, rgba(17, 125, 189, 0.2) 100%), radial-gradient(81.25% 93.41% at -16.15% 82.61%, rgba(17, 125, 189, 0.2) 0%, rgba(255, 206, 92, 0.2) 100%);
+}
+
+#processGuidelines {
+    padding-top:200px;
+}
+
+/* Layout */
+.projectIntroWrapper {
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    position: sticky;
+    top: 0px;
+    border-bottom-style: solid;
+    border-bottom-color: #303032;
+    border-bottom-width: 2px;
+}
+
+.projectIntroContainer {
+    margin: auto;
+    width: 98vw;
+    max-width: 1920px;
+    color: #ffffff;
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0;
+    flex: none;
+    padding-top: 15px;
+}
+
+.projectIntro {
+    margin: 50vh 0 0 0;
+    float: right;
+    width: 70vw;
+    min-width:500px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.projectTitle > p {
+    margin:0 0 20pt 0;
+    text-align:right;
+}
+
+.projectNotes {
+    width: 30vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.projectNotesItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-items: flex-start;
+}
+
+p.projectNotesItemText {
+        text-align: justify;
+        padding: 0;
+        font-size: 10pt;
+        font-weight: 100;
+        margin: 0 20px 0 0;
+    }
+
+img.projectNotesItemImage {
+    width: 40px;
+}
+.projectSectionTitle>h1{
+    writing-mode:vertical-lr;
+    position:relative;
+    left: -8pt;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chapter Intro Layout */
+
+.projectChapterIntroWrapper {
+    width: 100%;
+    height: 80vh;
+    z-index: 98;
+    position: sticky;
+    top: 50px;
+    color: #ffffff;
+}
+
+.chapterBackgroundImage {
+}
+
+.chapterTitle > p {
+    margin: 0 0 20pt 0;
+    text-align: right;
+}
+
+.chapterIntroContainer {
+    margin:auto;
+    width:98vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.chapterNotes {
+    width: 30vw;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.chapterNotesItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.chapterIntro {
+    margin: 35vh 0 0 0;
+    float: right;
+    width: 70vw;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/* Issue Table */
+.issueTable {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.issueTableItem {
+    margin-left: 75px;
+}
+
+.issueTableItem > h3 {
+    text-align: right;
+}
+
+.issueTableItem > p {
+    display: none;
+}
+
+/* Project Content Sections */
+
+.projectSectionTitle {
+    position:sticky;
+    top:125px;
+    z-index:50;
+}
+
+.projectContentWrapper {
+    padding-top: 200px;
+    position: sticky;
+    top: 100px;
+}
+
+.projectContentSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 15vw 150px 0px;
+}
+
+.projectSectionContentContainer {
+    display:flex;
+    flex-direction:column;
+    
+}
+
+.projectSectionParagraph {
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.projectSectionParagraph > h3 {
+    text-align: right
+}
+
+.projectSectionParagraph > p {
+    float:right;
+    text-align: justify;
+    width: 75vw;
+    max-width: 500px;
+
+
+}
+
+.paragraphWrapper {
+    float: right;
+    width: 75vw;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.paragraphWrapper >p {
+    text-align:justify;
+}
+
+#myInfoDetail > p {
+    width:100%;
+    float:right;
+    text-align:right;
+}
+
+#myInfoDetail{
+    float: right;
+}
+

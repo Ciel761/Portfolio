@@ -1,0 +1,76 @@
+﻿body {
+}
+
+
+/* Layout */
+
+div.backgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+}
+
+div.chapterBackgroundImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+/* Image Control */
+
+div.backgroundImage {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    filter: brightness(30%);
+    z-index: -10;
+}
+
+div.chapterBackgroundImage {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    filter: brightness(30%);
+    z-index: -10;
+}
+
+/* Image Setup */
+
+#personalCover > div.backgroundImage {
+    filter: brightness(80%) grayscale(10%);
+    background-color: #ffffff;
+    background-image: url("../image/SiyiCover.png");
+}
+
+#résumé > div.backgroundImage {
+    background-color: #ffffff;
+    background-image: url("../image/SiyiPersonalPhoto.JPG");
+    background-size: cover;
+    background-attachment: scroll;
+    filter: brightness(95%) grayscale(20%);
+    z-index: -10;
+}
+
+#tangibleDial > div.backgroundImage {
+    background-color: #ffffff;
+    background-image: url("../projects/TangibleDial/img/TangibleDial_Cover.png");
+}
+
+#imStillSurviving > div.backgroundImage {
+    background-color: #ffffff;
+    background-image: url("../projects/imStillSurviving/img/Stillsurviving_Cover.png");
+}
+
+#workBetterFromHome2021 > div.backgroundImage {
+    filter: brightness(20%) grayscale(20%);
+    background-color: #ffffff;
+    background-image: url("../projects/Teleworking2021/img/Teleworking2021_Cover.jpg");
+}
+
+#tenGuideline > div.chapterBackgroundImage {
+    filter: brightness(80%) grayscale(10%);
+    background-color: #ffffff;
+    background-image: url("../projects/Teleworking2021/img/GuidelinesCover.png");
+}

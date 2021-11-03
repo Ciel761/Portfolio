@@ -1,0 +1,44 @@
+﻿body {
+}
+
+nav {
+    display: flex;
+}
+
+.header {
+    height:50px;
+    font-size: 10pt;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    z-index:99;
+    background-color:#ffffff;
+    padding: 0 20px 0 20px;
+}
+
+.socialNetworking {
+    padding-left: 10px;
+    vertical-align: central;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .socialNetworking > a {
+        margin: 0 10px;
+    }
+
+.language {
+    padding-right:10px;
+    vertical-align:central;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.language>p {
+    margin: 0 10px;
+}
