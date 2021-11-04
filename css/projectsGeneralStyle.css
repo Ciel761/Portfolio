@@ -49,7 +49,7 @@ h2 > p {
 
 h3 {
     
-    font-weight: 18pt;
+    font-size: 24pt;
     font-weight: 300;
 }
 
@@ -124,6 +124,7 @@ p#about , p#skipChapter {
     flex-direction:row-reverse;
     align-items: flex-start;
     flex-grow: 0;
+    margin-top: 20px;
 }
 
 .imageContaineMultiple {
@@ -141,21 +142,21 @@ img.normalImage {
 }
 
 img.largeImage {
-    height: 500px;
+    height: 600px;
 }
 
 img.extraLargeImage {
-    height: 700px;
+    height: 800px;
 }
 
 img.longImage {
-    width: 70vw;
+    width: 80vw;
     max-width: 900px;
 }
 
 img.tallImage {
-    max-height: 120vh;
-    width: 35vw;
+    max-height: 130vh;
+    width: 50vw;
 }
 
 #multipleItem {
@@ -361,7 +362,7 @@ img.projectNotesItemImage {
 }
 
 .projectSectionParagraph {
-    margin: 0 0 20px 0;
+    margin: 0px 0 15px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;

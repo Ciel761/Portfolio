@@ -41,7 +41,7 @@ div.chapterBackgroundImage {
 #personalCover > div.backgroundImage {
     filter: brightness(80%) grayscale(10%);
     background-color: #ffffff;
-    background-image: url("../image/SiyiCover.png");
+    background-image: url("../image/SiyiCover.jpg");
 }
 
 #résumé > div.backgroundImage {
