@@ -70,7 +70,13 @@ div.chapterBackgroundImage {
 }
 
 #tenGuideline > div.chapterBackgroundImage {
-    filter: brightness(80%) grayscale(10%);
+    filter: brightness(65%) grayscale(15%);
     background-color: #ffffff;
     background-image: url("../projects/Teleworking2021/img/GuidelinesCover.png");
+}
+
+#emailApplication > div.chapterBackgroundImage {
+    filter: brightness(65%) grayscale(15%);
+    background-color: #ffffff;
+    background-image: url("../projects/Teleworking2021/img/Teleworking2021_AppCover.png");
 }

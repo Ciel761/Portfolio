@@ -2,13 +2,13 @@
 
 $(document).scroll(
     function () {
-    let animateDuration = 200;
+    let animateDuration = 120;
 
     let limitHeight1 = $(".projectContentWrapper").position().top;
-    let scrollHeight1 = limitHeight1 / 2;
+    let scrollHeight1 = limitHeight1 / 5;
     
-/* universal project intro */
-    if (window.scrollY < 55) {
+/* universal project intro
+     if (window.scrollY < 55) {
         $(".projectIntroWrapper").stop().animate({
             height: '100vh'
         }, animateDuration);
@@ -23,19 +23,21 @@ $(document).scroll(
             fontSize: '72pt', height : '82pt'
         }, animateDuration);
         $("#résumé > div.backgroundImage").css("filter", "brightness(95%)");
-    } else if (window.scrollY < scrollHeight1) {
+    } else
+    */
+if (window.scrollY < scrollHeight1) {
         $(".projectIntroWrapper").stop().animate({
-            height: '40vh'
+            height: '50vh'
         }, animateDuration);
         $(".projectIntro").stop().animate({
-            margin: '10vh 0 0 0'
+            margin: '20vh 0 0 0'
         }, animateDuration);
         $(".projectIntroContainer").stop().animate({
             paddingTop: '15px'
         }, animateDuration);
         $(".projectNotes").fadeIn();
         $(".projectTitle > p").stop().animate({
-            fontSize: '48pt', height : '56pt'
+            fontSize: '72pt', height : '82pt'
         }, animateDuration);
         $("#résumé > div.backgroundImage").css("filter", "brightness(80%)");
     } else {
@@ -54,12 +56,14 @@ $(document).scroll(
         $(".projectNotes").fadeOut();
         $("#résumé > div.backgroundImage").css("filter", "brightness(70%)");
     };
-    let a = $("#solutionTeleworking2021").position().top;
-    let b = parseInt($("#solutionTeleworking2021").css("height"));
-    let scrollHeight2n1 = a + b +350;
-    let scrollHeight2n2 = a + b +450;
 
-    /* chapter intro */
+
+
+        let a = $("#tenGuidelineTop").position().top;
+    let scrollHeight2n1 = a;
+    let scrollHeight2n2 = a + 100;
+
+    /* chapter intro 
     if (window.scrollY < scrollHeight2n1) {
 
         $(".projectChapterIntroWrapper").stop().animate({
@@ -75,35 +79,88 @@ $(document).scroll(
         $(".chapterTitle > p").stop().animate({
             fontSize: '72pt', height: '82pt'
         }, animateDuration);
-    } else if (window.scrollY < scrollHeight2n2) {
-        $(".projectChapterIntroWrapper").stop().animate({
-            height: '40vh'
+    } else */
+    if (window.scrollY < scrollHeight2n2) {
+        $("#tenGuideline").stop().animate({
+            height: '50vh'
         }, animateDuration);
-        $(".chapterIntro").stop().animate({
+        $("#tenGuidelineIntro").stop().animate({
             margin: '15vh 0 0 0'
         }, animateDuration);
-        $(".chapterIntroContainer").stop().animate({
+        $("#tenGuidelineContainer").stop().animate({
             paddingTop: '10px'
         }, animateDuration);
-        $(".chapterNotes").fadeIn();
-        $(".chapterTitle > p").stop().animate({
+        $("#tenGuidelineNotes").fadeIn();
+        $("#tenGuidelineTitle > p").stop().animate({
             fontSize: '36pt', height: '48pt'
         }, animateDuration);
     } else {
-        $(".projectChapterIntroWrapper").stop().animate({
+        $("#tenGuideline").stop().animate({
             height: '40px'
         }, animateDuration);
-        $(".chapterIntro").stop().animate({
+        $("#tenGuidelineIntro").stop().animate({
             margin: '8px 0 0 0'
         }, animateDuration);
-        $(".chapterIntroContainer").stop().animate({
+        $("#tenGuidelineContainer").stop().animate({
             paddingTop: '2px'
         }, animateDuration);
-        $(".chapterNotes").fadeOut();
-        $(".chapterTitle > p").stop().animate({
-            fontSize: '14pt', height: '20pt'
+        $("#tenGuidelineNotes").fadeOut();
+        $("#tenGuidelineTitle > p").stop().animate({
+            fontSize: '14pt', height: '20pt', fontWeight: '400'
         }, animateDuration);
-    };
+        };
+
+        let b = $("#emailApplicationTop").position().top;
+        
+        let scrollHeight3n1 = b ;
+        let scrollHeight3n2 = b + 100;
+
+        /* chapter intro 
+        if (window.scrollY < scrollHeight2n1) {
+    
+            $(".projectChapterIntroWrapper").stop().animate({
+                height: '90vh'
+            }, animateDuration);
+            $(".chapterIntro").stop().animate({
+                margin: '30vh 0 0 0'
+            }, animateDuration);
+            $(".chapterIntroContainer").stop().animate({
+                paddingTop: '15px'
+            }, animateDuration);
+            $(".chapterNotes").fadeIn();
+            $(".chapterTitle > p").stop().animate({
+                fontSize: '72pt', height: '82pt'
+            }, animateDuration);
+        } else */
+        if (window.scrollY < scrollHeight3n2) {
+            $("#emailApplication").stop().animate({
+                height: '50vh'
+            }, animateDuration);
+            $("#emailApplicationIntro").stop().animate({
+                margin: '15vh 0 0 0'
+            }, animateDuration);
+            $("#emailApplicationContainer").stop().animate({
+                paddingTop: '10px'
+            }, animateDuration);
+            $("#emailApplicationNotes").fadeIn();
+            $("#emailApplicationTitle > p").stop().animate({
+                fontSize: '36pt', height: '48pt'
+            }, animateDuration);
+        } else {
+            $("#emailApplication").stop().animate({
+                height: '40px'
+            }, animateDuration);
+            $("#emailApplicationIntro").stop().animate({
+                margin: '8px 0 0 0'
+            }, animateDuration);
+            $("#emailApplicationContainer").stop().animate({
+                paddingTop: '2px'
+            }, animateDuration);
+            $("#emailApplicationNotes").fadeOut();
+            $("#emailApplicationTitle > p").stop().animate({
+                fontSize: '14pt', height: '20pt', fontWeight: '400'
+            }, animateDuration);
+        };
 });
 
 /*
